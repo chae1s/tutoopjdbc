@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Game369Test {
     @Test
     void test369() {
-        assertEquals("**", Game369.playGame(33));
+        assertEquals("**", MyUtils.is369(33));
     }
 
 }
