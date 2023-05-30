@@ -1,16 +1,17 @@
 public class LeapYear {
     public static void main(String[] args) {
-        checkLeapYear();
+        int i = 1700;
+        if (checkLeapYear(i)) {
+            System.out.println(i + " O");
+        } else {
+            System.out.println(i + " X");
+        }
     }
 
     // 윤년 알아맞추기
-    private static void checkLeapYear() {
-        int year = 1700;
+    public static boolean checkLeapYear(int year) {
 
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println(year + " O");
-        } else {
-            System.out.println(year + " X");
-        }
+        return  (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
+
     }
 }
