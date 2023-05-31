@@ -28,6 +28,16 @@ public class GameTest {
         assertEquals(true, game.isAnswer(2));
     }
 
+    public void testRandom() {
+        System.out.println((int)Math.random() * 10);
+    }
+    @Test
+    public void testSumMax() {
+        int a = 0;
+        int b = 0;
+        assertTrue(a + b < 10);
+    }
+
 
 
 }
